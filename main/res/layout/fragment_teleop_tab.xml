@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="TeleopTab">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/teleScore2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Tele Score 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/bitter"
+        app:layout_constraintBottom_toTopOf="@+id/teleScore2ScoreTextView"
+        app:layout_constraintEnd_toEndOf="@+id/teleScore2PlusButton"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/teleScore2MinusButton" />
+
+    <TextView
+        android:id="@+id/teleScore1ScoreTextView"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/bitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/teleScore1PlusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="teleScore1PlusButton"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teleScore1ScoreTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/teleScore1ScoreTextView" />
+
+    <Button
+        android:id="@+id/teleScore1MinusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:onClick="teleScore1MinusButton"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/teleScore1ScoreTextView"
+        app:layout_constraintEnd_toStartOf="@+id/teleScore1ScoreTextView" />
+
+    <TextView
+        android:id="@+id/teleScore1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Tele Score 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/bitter"
+        app:layout_constraintBottom_toTopOf="@+id/teleScore1ScoreTextView"
+        app:layout_constraintEnd_toEndOf="@+id/teleScore1PlusButton"
+        app:layout_constraintStart_toStartOf="@+id/teleScore1MinusButton" />
+
+    <Button
+        android:id="@+id/teleScore2MinusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="teleScore2MinusButton"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/teleScore2ScoreTextView"
+        app:layout_constraintEnd_toStartOf="@+id/teleScore2ScoreTextView" />
+
+    <Button
+        android:id="@+id/teleScore2PlusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:onClick="teleScore2PlusButton"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35sp"
+        app:layout_constraintStart_toEndOf="@+id/teleScore2ScoreTextView"
+        app:layout_constraintTop_toTopOf="@+id/teleScore2ScoreTextView" />
+
+    <TextView
+        android:id="@+id/teleScore2ScoreTextView"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/bitter"
+        app:layout_constraintBottom_toBottomOf="@+id/teleScore1PlusButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/teleScore1PlusButton" />
+
+    <TextView
+        android:id="@+id/teleScore3ScoreTextView"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="144dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/bitter"
+        app:layout_constraintEnd_toEndOf="@+id/teleScore1ScoreTextView"
+        app:layout_constraintStart_toStartOf="@+id/teleScore1ScoreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/teleScore1ScoreTextView" />
+
+    <Button
+        android:id="@+id/teleScore3MinusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:onClick="teleScore3MinusButton"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/teleScore3ScoreTextView"
+        app:layout_constraintTop_toTopOf="@+id/teleScore3ScoreTextView" />
+
+    <Button
+        android:id="@+id/teleScore3PlusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:onClick="teleScore3PlusButton"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/teleScore3ScoreTextView"
+        app:layout_constraintTop_toTopOf="@+id/teleScore3ScoreTextView" />
+
+    <TextView
+        android:id="@+id/teleScore3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Tele Score 3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/bitter"
+        app:layout_constraintBottom_toTopOf="@+id/teleScore3ScoreTextView"
+        app:layout_constraintEnd_toEndOf="@+id/teleScore3PlusButton"
+        app:layout_constraintStart_toStartOf="@+id/teleScore3MinusButton" />
+
+    <TextView
+        android:id="@+id/teleScore4ScoreTextView"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/bitter"
+        app:layout_constraintEnd_toStartOf="@+id/teleScore2PlusButton"
+        app:layout_constraintTop_toTopOf="@+id/teleScore3ScoreTextView" />
+
+    <Button
+        android:id="@+id/teleScore4MinusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:onClick="teleScore4MinusButton"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/teleScore4ScoreTextView"
+        app:layout_constraintTop_toTopOf="@+id/teleScore4ScoreTextView" />
+
+    <Button
+        android:id="@+id/teleScore4PlusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:onClick="teleScore4PlusButton"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35sp"
+        app:layout_constraintStart_toEndOf="@+id/teleScore4ScoreTextView"
+        app:layout_constraintTop_toTopOf="@+id/teleScore4ScoreTextView" />
+
+    <TextView
+        android:id="@+id/teleScore4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Tele Score 4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/bitter"
+        app:layout_constraintBottom_toTopOf="@+id/teleScore4ScoreTextView"
+        app:layout_constraintEnd_toEndOf="@+id/teleScore4PlusButton"
+        app:layout_constraintStart_toStartOf="@+id/teleScore4MinusButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

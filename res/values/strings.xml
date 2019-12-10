@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ScoutingAppFramework</string>
+    <string-array name="startLevelSpinner">
+        <item>One</item>
+        <item>Two</item>
+        <item>None</item>
+    </string-array>
+</resources>
